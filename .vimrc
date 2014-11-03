@@ -67,9 +67,28 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set softtabstop=4
+set autoindent
+
+"Add tweak for better backspace support
+set backspace=indent,eol,start
+
+"-- Faster timeout for mappings (ESC key immediately exit modes)
+set ttimeout
+set ttimeoutlen=20
+set notimeout
+
+"-- No Backup --
+set nobackup " make no backup files - I have git for it
+
+if has("wildignore")
+  set wildignore+=*.o,*.obj,*.pyc,*.orig,*.swp,.git,*.toc,*.aux,*.out,*.snm,*.nav
+endif
 
 :set incsearch
 :set hlsearch
+
+set mouse=a
 
 :set number
 highlight clear SignColumn "set the git gutter to be the same color as the line number column
