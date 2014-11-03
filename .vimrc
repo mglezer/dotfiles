@@ -105,23 +105,6 @@ command! -nargs=+ Grep execute 'silent grep! -I -r -n --exclude *.{json,pyc} . -
 :nmap <leader>g :Grep <c-r>=expand("<cword>")<cr><cr>
 
 let mapleader=","
-let g:ctrlp_match_window = 'results:100' " overcome limit imposed by max height in ctrlp
-"
 
-let g:gitgutter_realtime=750
-
-" The Silver Searcher
-if executable('ag')
-  " Use ag over grep
-    set grepprg=ag\ --nogroup\ --nocolor
-    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-    " ag is fast enough that CtrlP doesn't need to cache
-    let g:ctrlp_use_caching = 0
-endif
-
-" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
-vmap <Enter> <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. <Leader>aip)
-nmap <Leader>a <Plug>(EasyAlign)
+"grep for word under cursor when you hit K
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
