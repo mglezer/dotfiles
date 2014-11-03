@@ -26,10 +26,36 @@ Plugin 'git://github.com/kien/ctrlp.vim.git'
 Plugin 'FelikZ/ctrlp-py-matcher'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'git://github.com/terryma/vim-multiple-cursors.git'
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'junegunn/vim-easy-align'
+Bundle 'jshint.vim'
+Plugin 'Syntastic'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+
+" ######################################## 
+" Plugins Customizations
+let g:syntastic_javascript_checkers = ['jshint'] 
+let g:ctrlp_match_window = 'results:100' " overcome limit imposed by max height in ctrlp
+let g:gitgutter_realtime=750
+" The Silver Searcher
+if executable('ag')
+  " Use ag over grep
+    set grepprg=ag\ --nogroup\ --nocolor
+    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+    " ag is fast enough that CtrlP doesn't need to cache
+    let g:ctrlp_use_caching = 0
+endif
+" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+vmap <Enter> <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. <Leader>aip)
+nmap <Leader>a <Plug>(EasyAlign)
+" ########################################
+
+
 " Put your non-Plugin stuff after this line
 
 syntax enable
