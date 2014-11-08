@@ -29,6 +29,7 @@ Plugin 'git://github.com/terryma/vim-multiple-cursors.git'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'junegunn/vim-easy-align'
 Bundle 'jshint.vim'
+Bundle 'christoomey/vim-tmux-navigator'
 Plugin 'Syntastic'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
