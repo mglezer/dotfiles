@@ -88,4 +88,7 @@ alias search="grep -I -r -n --exclude=\*.{json,pyc,html,xml,response,o,min.js} .
 cd crossover
 tmux a #0
 
+function short_search(){
+    grep -I -r -E -n --exclude=\*.{json,pyc,html,xml,response,o,min.js} . -e "^.{0,40}$1.{0,40}$"
+}
 
