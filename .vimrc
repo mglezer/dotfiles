@@ -13,10 +13,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
-" Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-"Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -30,6 +26,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'junegunn/vim-easy-align'
 Bundle 'jshint.vim'
 Bundle 'christoomey/vim-tmux-navigator'
+Plugin 'bling/vim-airline'
 Plugin 'Syntastic'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -54,6 +51,8 @@ endif
 vmap <Enter> <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. <Leader>aip)
 nmap <Leader>a <Plug>(EasyAlign)
+set laststatus=2
+let g:airline_powerline_fonts = 1
 " ########################################
 
 
