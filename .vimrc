@@ -18,6 +18,9 @@ Plugin 'L9'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Solarized plugin for colorscheme
 Plugin 'git://github.com/altercation/vim-colors-solarized.git'
+" JS/JSX Syntax highlighting plugins
+Plugin 'pangloss/vim-javascript'
+Plugin 'git://github.com/mxw/vim-jsx.git'
 Plugin 'git://github.com/kien/ctrlp.vim.git'
 Plugin 'FelikZ/ctrlp-py-matcher'
 Plugin 'airblade/vim-gitgutter'
