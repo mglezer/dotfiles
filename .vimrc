@@ -38,7 +38,13 @@ filetype plugin indent on    " required
 
 " ######################################## 
 " Plugins Customizations
+
+"Syntastic
 let g:syntastic_javascript_checkers = ['jshint'] 
+let g:syntastic_json_checkers=['jsonlint']
+" Make sure vim sets filetype to json for all .json files
+au BufRead,BufNewFile *.json set filetype=json
+
 let g:ctrlp_match_window = 'results:100' " overcome limit imposed by max height in ctrlp
 let g:gitgutter_realtime=750
 " The Silver Searcher
