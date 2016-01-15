@@ -72,6 +72,10 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
+"Use system clipboard
+set clipboard=unnamed
+
+"Indentation
 set smartindent
 set tabstop=4
 set shiftwidth=4

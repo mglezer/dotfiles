@@ -83,10 +83,10 @@ export PATH="/home/y/bin64:/home/y/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin
 # User specific environment and startup programs
 alias run='sudo ./node_modules/grunt-cli/bin/grunt nodemon'
 alias tmux="TERM=screen-256color-bce tmux"
-alias mount='sshfs deniesrise.corp.gq1.yahoo.com:/home/mathang/crossover/ /Users/mathang/yahoo/openstack/deniesrise.corp.gq1.yahoo.com/'
-alias os='ssh deniesrise.corp.gq1.yahoo.com'
+alias mount='sshfs annoyeddestroyed.corp.gq1.yahoo.com:/home/mathang/ /Users/mathang/yahoo/openstack/annoyeddestroyed.corp.gq1.yahoo.com/'
+alias os='ssh bluetattoo.corp.gq1.yahoo.com'
 alias search="grep -I -r -n --exclude=\*.{json,pyc,html,xml,response,o,min.js} . -e"
-cd crossover
+cd middleware
 tmux a #0
 
 function short_search(){
