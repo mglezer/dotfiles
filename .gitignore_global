@@ -1,0 +1,16 @@
+#OS X temp files
+
+.DS_Store
+
+#General temp files
+
+*.swp
+
+#Thumbnails
+._*
+
+#Log files
+*.log
+
+#Silver Searcher ignore files
+.agignore
