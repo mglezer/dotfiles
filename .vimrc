@@ -40,7 +40,7 @@ filetype plugin indent on    " required
 " Plugins Customizations
 
 "Syntastic
-let g:syntastic_javascript_checkers = ['jshint'] 
+let g:syntastic_javascript_checkers = ['eslint'] 
 let g:syntastic_json_checkers=['jsonlint']
 " Make sure vim sets filetype to json for all .json files
 au BufRead,BufNewFile *.json set filetype=json
