@@ -70,7 +70,7 @@ let g:airline_powerline_fonts = 1
 syntax enable
 set background=dark
 let g:solarized_termcolors=256
-colorscheme solarized
+"colorscheme solarized
 
 "Use system clipboard
 set clipboard=unnamed
