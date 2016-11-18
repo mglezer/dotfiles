@@ -23,6 +23,7 @@ git config --global color.ui auto
 git config --global color.branch auto
 git config --global color.status auto
 git config --global push.default simple
+git config --global core.editor "vim"
 
 echo "setting up vundle for vim"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
