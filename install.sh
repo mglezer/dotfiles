@@ -9,11 +9,14 @@ for dotfile in $(git ls-files); do
 done
 
 echo "installing lint tools"
+#javascript
 sudo npm install -g eslint
 sudo npm install -g eslint_d
 sudo npm install -g jsonlint
 sudo npm install -g eslint-plugin-react
 sudo npm install -g babel-eslint
+#yaml
+sudo npm install -g js-yaml
 
 echo "setting global .gitignore"
 git config --global core.excludesfile ~/.gitignore_global
