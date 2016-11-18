@@ -12,6 +12,8 @@ echo "installing lint tools"
 sudo npm install -g eslint
 sudo npm install -g eslint_d
 sudo npm install -g jsonlint
+sudo npm install -g eslint-plugin-react
+sudo npm install -g babel-eslint
 
 echo "setting global .gitignore"
 git config --global core.excludesfile ~/.gitignore_global
