@@ -22,7 +22,7 @@ echo "setting global .gitignore"
 git config --global core.excludesfile ~/.gitignore_global
 
 echo "setting up git"
-git config --global user.email "mathang@yahoo-inc.com"
+git config --global user.email "mathan.glezer@microsoft.com"
 git config --global user.name "Mathan Glezer"
 git config --global color.ui auto
 git config --global color.branch auto
