@@ -17,14 +17,14 @@ Plugin 'L9'
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Solarized plugin for colorscheme
-Plugin 'git://github.com/altercation/vim-colors-solarized.git'
+Plugin 'altercation/vim-colors-solarized'
 " JS/JSX Syntax highlighting plugins
 Plugin 'pangloss/vim-javascript'
-Plugin 'git://github.com/mxw/vim-jsx.git'
-Plugin 'git://github.com/kien/ctrlp.vim.git'
+Plugin 'mxw/vim-jsx.git'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'FelikZ/ctrlp-py-matcher'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'git://github.com/terryma/vim-multiple-cursors.git'
+Plugin 'mg979/vim-visual-multi'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'junegunn/vim-easy-align'
 Bundle 'jshint.vim'
